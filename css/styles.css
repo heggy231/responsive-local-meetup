@@ -83,6 +83,11 @@ li {
   .main, header {
     height: auto;
   }
+
+  .location img {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -101,10 +106,5 @@ li {
 @media only screen and (max-width: 470px) {
   .quote q, .location p {
     font-size: 1.3rem;
-  }
-
-  .location img {
-    width: 100%;
-    margin: 0;
   }
 }
