@@ -1,0 +1,110 @@
+body {
+  font-family: 'Balsamiq Sans', cursive, serif;
+  font-size: 16px;
+  margin: 0px;
+  background-image: url('../img/hypnotize_bg.png');
+}
+
+.main {
+  height: 30rem;
+}
+
+header {
+  height: 25.5rem;
+  color: wheat;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  width: 100%;
+  height: 7rem;
+  /* center the text middle
+    https://vanseodesign.com/css/vertical-centering/#:~:text=When%20the%20element%20to%20be,order%20to%20center%20things%20vertically.
+  */
+  line-height: 7rem;
+  background-color: rgb(85, 30, 8);
+}
+
+nav {
+  background-color: teal;
+  color: antiquewhite;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  padding: 0.75rem 1.24rem;
+}
+
+.meet, .gallery, .quote, .location {
+  padding: 0.75rem 1.24rem;
+}
+
+.gallery img {
+  display: block;
+  width: 30%;
+  margin: 1.5%;
+  float: left;
+}
+/* clear the next element following my img */
+.clearfix {
+  clear: both;
+}
+
+.quote q, .location p {
+  font-size: 2.5rem;
+}
+
+.quote {
+  background-color: teal;
+  color: antiquewhite;
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
+}
+
+.location p {
+  text-align: center;
+}
+
+.location img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 960px) {
+  .main, header {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  li {
+    display: block;
+    padding: 0.5rem 0.9rem;
+    text-align: center;
+  }
+
+  .gallery img {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .quote q, .location p {
+    font-size: 1.3rem;
+  }
+
+  .location img {
+    width: 100%;
+    margin: 0;
+  }
+}
