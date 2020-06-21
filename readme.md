@@ -1,6 +1,5 @@
 # Responsive Club Website
-Overview
-
+[Demo](https://heggy231.github.io/responsive-local-meetup/)
 
 ## Project Goals
 In this project, you’ll be building your own club group page that will dynamically respond as you adjust the size of your screen!​
