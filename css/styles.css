@@ -11,26 +11,38 @@ body {
 
 header {
   height: 25.5rem;
-  color: wheat;
+  background-image: url('../img/nature-banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
-h1 {
+header img {
+  width: 15rem;
+  display: block;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+header h1 {
+  color: wheat;
+  font-size: 5rem;
   width: 100%;
   height: 7rem;
   /* center the text middle
     https://vanseodesign.com/css/vertical-centering/#:~:text=When%20the%20element%20to%20be,order%20to%20center%20things%20vertically.
   */
   line-height: 7rem;
-  background-color: rgb(85, 30, 8);
+  background-color: rgba(0.5, 0.5, 0.5, 0.5);
 }
 
 nav {
+  padding-top: 1rem;
   background-color: teal;
-  color: antiquewhite;
 }
 
 ul {
@@ -39,12 +51,21 @@ ul {
 }
 
 li {
+  color: antiquewhite;
   display: inline-block;
+  padding: 0.75rem 1.24rem;
+  margin-right: 1.5rem;
+}
+
+.meet,
+.gallery,
+.quote,
+.location {
   padding: 0.75rem 1.24rem;
 }
 
-.meet, .gallery, .quote, .location {
-  padding: 0.75rem 1.24rem;
+.meet {
+  
 }
 
 .gallery img {
@@ -75,8 +96,9 @@ li {
 
 .location img {
   width: 50%;
+  height: auto;
   display: block;
-  margin: 0 auto;
+  margin: auto;
 }
 
 @media only screen and (max-width: 960px) {
@@ -84,9 +106,8 @@ li {
     height: auto;
   }
 
-  .location img {
-    width: 100%;
-    margin: 0;
+  header h1 {
+    font-size: 2rem;
   }
 }
 
@@ -101,10 +122,23 @@ li {
     width: 100%;
     margin: 0;
   }
+
+  .location img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .quote q, .location p {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 470px) {
   .quote q, .location p {
     font-size: 1.3rem;
+  }
+
+  .quote p {
+    font-size: 1rem;
   }
 }
