@@ -5,10 +5,6 @@ body {
   background-image: url('../img/hypnotize_bg.png');
 }
 
-.main {
-  height: 30rem;
-}
-
 header {
   height: 25.5rem;
   background-image: url('../img/nature-banner.jpg');
@@ -23,6 +19,7 @@ header {
 
 header img {
   width: 15rem;
+  height: auto;
   display: block;
   margin: auto;
   margin-top: 5rem;
@@ -43,6 +40,8 @@ header h1 {
 nav {
   padding-top: 1rem;
   background-color: teal;
+  position: fixed;
+  width: 100%;
 }
 
 ul {
@@ -102,16 +101,21 @@ li {
 }
 
 @media only screen and (max-width: 960px) {
-  .main, header {
-    height: auto;
+  header {
+    height: 16rem;
   }
 
   header h1 {
-    font-size: 2rem;
+    font-size: 1.2rem;
+    height: 4rem;
+    line-height: 4rem;
   }
 }
 
 @media only screen and (max-width: 700px) {
+  nav {
+    position: unset;
+  }
   li {
     display: block;
     padding: 0.5rem 0.9rem;
